@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CoviDash</string>
+    <string name="title">CoviDash</string>
+    <string name="total_cases">Total Cases:</string>
+    <string name="tot_cases">0</string>
+    <string name="active_cases">Active:</string>
+    <string name="active_case">0</string>
+    <string name="recovered">Recovered:</string>
+    <string name="recovered_0">0</string>
+    <string name="deceased">Deceased:</string>
+    <string name="deceased_0">0</string>
+    <string name="vaccination_dashboard">Vaccination Dashboard</string>
+    <string name="vaccinated">Vaccinated:</string>
+    <string name="vaccinated_0">0</string>
+    <string name="covid19_dashboard">COVID19 Dashboard</string>
+    <string name="updated">Updated On</string>
+    <string name="updated_0">0</string>
+</resources>

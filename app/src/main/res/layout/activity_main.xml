@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/covid19_dashboard"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <TextView
+        android:id="@+id/header2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/vaccination_dashboard"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <TextView
+        android:id="@+id/caseLoad"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/total_cases"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/total_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="96dp"
+        android:text="@string/tot_cases"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/caseLoad"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/active"
+        android:layout_width="80dp"
+        android:fontFamily="@font/open_sans"
+        android:layout_height="20dp"
+        android:layout_marginStart="96dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="32dp"
+        android:text="@string/active_cases"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caseLoad" />
+
+    <TextView
+        android:id="@+id/active_text"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="96dp"
+        android:textColor="@color/black"
+        android:text="@string/active_case"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/active"
+        app:layout_constraintTop_toBottomOf="@+id/total_text" />
+
+    <TextView
+        android:id="@+id/recovered"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/recovered"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/active" />
+
+    <TextView
+        android:id="@+id/recovered_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="96dp"
+        android:text="@string/recovered_0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recovered"
+        app:layout_constraintTop_toBottomOf="@+id/active_text" />
+
+    <TextView
+        android:id="@+id/deceased"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginStart="96dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="32dp"
+        android:text="@string/deceased"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recovered" />
+
+    <TextView
+        android:id="@+id/deceased_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="96dp"
+        android:text="@string/deceased_0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/deceased"
+        app:layout_constraintTop_toBottomOf="@+id/recovered_text" />
+
+    <TextView
+        android:id="@+id/total_vaccinations"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/vaccinated"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header2" />
+
+    <TextView
+        android:id="@+id/vaccinated_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginTop="52dp"
+
+        android:layout_marginEnd="96dp"
+        android:text="@string/vaccinated_0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/total_vaccinations"
+        app:layout_constraintTop_toBottomOf="@+id/header2" />
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="168dp"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/updated"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/updated_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/updated_0"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
